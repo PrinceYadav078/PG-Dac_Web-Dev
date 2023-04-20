@@ -1,0 +1,7 @@
+.header{padding: 10px;}
+/* hexadecimal you can use 0-9 and  */
+.header a{color: #aaa; text-transform: uppercase;}
+.header a:hover{
+    color: rgb(213, 121, 7);
+    transform: scale(1.5);
+}
