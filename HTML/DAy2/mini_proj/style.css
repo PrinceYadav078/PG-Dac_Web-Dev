@@ -5,3 +5,24 @@
     color: rgb(213, 121, 7);
     transform: scale(1.5);
 }
+.footer{
+    background-color: black;
+    color: antiquewhite;
+    font-family: cursive;
+    font-size: 20px;
+    /* height: 400px; */
+}
+
+.footer a{color: #aaa; padding-left: 0;}
+.footer h4{font-size: 35px;}
+.footer a:hover{
+    color: rgb(213, 121, 7);
+    transform: scale(1.2);
+}
+
+@media screen and (max-width:576px) {
+    .logo{
+        width: 100%;
+        text-align: center;
+    }
+}
