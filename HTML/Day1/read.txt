@@ -1,0 +1,8 @@
+p tag -- paired elements =>  <p></p>
+
+img tag --Unpaired elements => <img/>
+
+SELECTORS FOR CSS --->
+1 Tag SELECTORS
+2 Id SELECTORS
+3 class selectors

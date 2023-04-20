@@ -1,0 +1,31 @@
+.text-start{text-align: left;}
+.text-centre{text-align: center;}
+.text-end{text-align: end}
+.container{
+    width: 1000px;
+    margin: auto;
+}
+.row{display: flex;}
+.col-6{
+    width: 50%;
+    background-color: rgb(156, 227, 227);
+}
+/*paddding=> top-bottom  right-left */
+.col-6,.col-3,.col-2{padding: 0 12px;}  
+.col-3{
+    width: 25%;
+    background-color: aqua;
+    text-align: center;
+    transition: transform .2s;
+}
+.col-2{
+    width: 16.66%;
+    background-color: antiquewhite;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
+.col-3:hover{
+    transform: scale(1.5);
+}

@@ -1,0 +1,49 @@
+.container{
+    /* border: solid; */
+    /* border-radius: 15px; */
+    width: 1000px;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    /* justify-content: space-around; */
+    /* background-color: antiquewhite; */
+    padding: 10px;
+}
+.product{
+   /* border: solid; */
+   /* border-radius: 15px; */
+   text-align: center;
+   height: auto;
+   padding: 10px;
+   
+}
+.product img{
+    /* height: 70%; */
+    width: 100%;
+}
+.product h2{
+    font-size: 20px;
+}
+.product p{
+    color: rgb(160, 95, 151);
+    font-family:fantasy;
+    font-size: 25px;
+}
+.product .btn{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(223, 224, 215);
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+    
+   
+}
+
+
+
+/* after this 9.html file css  */
+

@@ -1,0 +1,18 @@
+.container{
+    width: 1000px;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    display: flex;
+
+}
+.product{
+    width: 33.33%;
+    text-align: center;
+    transition: transform .2s;
+
+}
+.product:hover{
+   
+    transform: scale(1.5);
+}
