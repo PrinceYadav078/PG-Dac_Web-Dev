@@ -1,0 +1,19 @@
+var products=[
+    {
+        name:"product1",
+        price:1000
+    },
+    {
+        name:"product2",
+        price:2000,
+    },
+    {
+        name:"product3",
+        price:3000,
+    },
+    {
+        name:"product4",
+        price:4000
+    }
+]
+console.log(products)
