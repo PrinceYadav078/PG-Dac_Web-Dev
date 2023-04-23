@@ -1,0 +1,72 @@
+<script>
+    
+
+
+    var record1=/[a-z][0-9][A-Z]/
+    var data="m8K"
+    var ans=record1.test(data)
+    console.log(ans)
+// regular expression for Pin-Code
+    var record2=/^[1-9][0-9][0-9][0-9][0-9][0-9]$/    // carrot (^) symbol represent the first character and dollar($) symbol represent last character
+    var data=283203
+    var ans=record2.test(data)
+    console.log(ans)
+// regular expression for mobile number
+    var record3=/^[6-9][0-9]{9}$/    //[0-9]{9} means 9 times of [0-9] or range
+    var data=5077046718
+    var ans=record3.test(data)
+    console.log(ans)        // output false bcz first char=>5
+
+    // regular expression for simple password
+    var record4=/^[a-zA-Z0-9]{4,12}$/
+    var data="Prince"
+    var ans =record4.test(data)
+    console.log(ans)
+
+    //regular expression for usename
+    var record5=/^[a-zA-z]([a-zA-z ]{1,})?[a-zA-z]$/
+    var data="Prince y"
+    var ans=record5.test(data)
+    console.log(ans)
+    // regular expression for months
+    var record6=/^([0]?[1-9]|[1][0-2])$/
+    var data=02
+    var ans =record6.test(data)
+    console.log(ans)
+    //regular expression for pancard
+    var record7=/^[a-zA-z]{5}[0-9]{4}[a-zA-z]$/
+    var data="esrpp3389g"
+    var ans=record7.test(data)
+    console.log(ans)
+    // escape character (\)
+    console.log("prince'yadav")
+    console.log("Prince\"Yadav")
+
+    //regular expression for emailid
+    // + it is equal to{1,}
+    var user_name=/^([a-zA-Z0-9]([a-zA-Z0-9_\.]+)?[a-zA-Z0-9])$/
+    var data="123_.abc"
+    var ans =user_name.test(data)
+    console.log(ans)
+
+    // var domain =/^(yahoo)\.([a-zA-Z]{2,})(\.[a-z]{2,})?$/
+    var domain=/^([a-zA-Z0-9]([a-zA-Z0-9_\.]+)?[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-z]{2,})?$/
+    var data="99acres.com"
+    var ans=domain.test(data)
+    console.log(ans)
+    // email=username@domain
+    var email=/^([a-zA-Z0-9]([a-zA-Z0-9_\.]+)?[a-zA-Z0-9])@([a-zA-Z0-9]([a-zA-Z0-9_\.]+)?[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-z]{2,})?$/
+
+    var data="princeyadav283203@gmail.com"
+    var ans=email.test(data)
+    console.log(ans)
+
+    // regular expression for STRICT PASSWORD
+    // ?= says current character onward
+    //. each
+    // * every where in the string
+    var password=/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[@#_\-\.]).{4,8}$/
+    var data="*-.#@aP9"
+    var ans=password.test(data)
+    console.log(ans)
+</script>

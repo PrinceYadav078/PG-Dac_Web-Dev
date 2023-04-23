@@ -1,0 +1,12 @@
+
+<input type="password" placeholder="password">
+<input id="x1" type="checkbox">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script>
+    $("#x1").click(function(){
+        // alert()
+        // console.log($(this).is(":checked"))
+        ($(this).is(":checked"))?($(this).prev().attr("type","text")):($(this).prev().attr("type","password"))
+    })
+</script>

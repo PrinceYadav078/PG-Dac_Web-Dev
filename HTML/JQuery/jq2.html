@@ -1,0 +1,17 @@
+<button>enter</button>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, sapiente non, aliquid cumque modi quis eaque pariatur ipsam eum voluptate voluptatibus quas officia, optio asperiores quo inventore fugit molestiae sit?</p>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+<script>
+    // console.log($("button"))
+    // Jquery selectors $("button")
+  
+    $("button").click(()=>{
+        // alert("button clicked")
+        $("p").text("Prince").css("border" , "solid").width(300).animate({
+            "margin-top":"50px"
+        },2000)
+    })
+</script> 
