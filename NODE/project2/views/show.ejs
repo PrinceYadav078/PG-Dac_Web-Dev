@@ -1,0 +1,39 @@
+<%- include("menu.ejs") %>
+<div class="parent pt-5 pb-2 bg-secondary bg-opacity-75 text-center " style="height: 100%;" >
+   
+    <h1 class="pb-2">User Information</h1>
+  <div class="container bg-danger-subtle " style="border-radius: 10px;">
+    
+    <table class="table table-danger ">
+      <thead>
+        <tr>
+          <th scope="col">FirstName</th>
+          <th scope="col">Lastname</th>
+          <th scope="col">Email&nbsp;&nbsp;&nbsp;&nbsp;</th>
+          <th scope="col">Password</th>
+          <th scope="col">Mobile</th>
+          <th scope="col">City</th>
+          <th scope="col">State</th>
+          <th scope="col">zip</th>
+          
+        </tr>
+      </thead>
+      <tbody>
+        <% userRecord.forEach(function(users) { %>
+            <tr>
+                <td><%= users.F_name%></td>
+                <td><%= users.L_name%></td>
+                <td><%= users.email%></td>
+                <td><%= users.password%></td>
+                <td><%= users.mobile%></td>
+                <td><%= users.address%></td>
+                <td><%= users.city%></td>
+                <td><%= users.zip%></td>
+               
+              </tr>
+         <% }); %>
+       
+      </tbody>
+    </table>
+  </div>
+</div>
