@@ -5,6 +5,7 @@ function m1(cur_elem){
     var new_path=cur_elem.src.replace("128/128" , "832/832")
     // console.log(new_path)
     document.querySelector("#x1").src=new_path
-    // cur_elem.className = "img-fluid border-info"
+    cur_elem.className = "img-fluid border border-primary border-3"
+    
     
 }

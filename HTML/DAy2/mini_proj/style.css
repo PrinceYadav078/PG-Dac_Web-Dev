@@ -26,6 +26,28 @@
     .logo{
         width: 100%;
         text-align: center;
+        padding: 0.5rem;
+        /* border: solid; */
+        
+    }
+    body{
+        border: solid red;
+        
+    }
+   
+}
+
+
+@media screen and (min-width:576px) and (max-width:767px) {
+    .logo{
+        width: 100%;
+        text-align: center;
+       
+    }
+    body{
+        border: solid greenyellow;
+       
+       
     }
    
 }
