@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="container">
+        <h1 style="text-align: center">Registration Form</h1>
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-6">
+              <label for="fname">FirstName</label><br />
+              <input type="text" placeholder="FirstName" id="fname" />
+            </div>
+
+            <div class="col-6">
+              <label for="lname">LastName</label><br />
+              <input type="text" placeholder="LastName" id="lname" />
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6">
+              <label for="mobile">Mobile</label><br />
+              <input type="text" placeholder="Mobile" id="mobile " />
+            </div>
+            <div class="col-6">
+              <label for="email">Email</label><br />
+              <input type="text" placeholder="Email" id="email" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="p1">Photo</label><br />
+              <input id="p1" type="file" />
+            </div>
+
+            <div
+              class="col-6"
+              style="margin-top: 10px; margin-right: 50px; font-size: 25px"
+            >
+              <label> Course : </label>
+              <select style="font-size: 25px">
+                <option value="Course">Course</option>
+                <option value="BCA">BCA</option>
+                <option value="BBA">BBA</option>
+                <option value="B.Tech">B.Tech</option>
+                <option value="MBA">MBA</option>
+                <option value="MCA">MCA</option>
+                <option value="M.Tech">M.Tech</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <label for="dob">D.O.B</label><br />
+              <input type="date" name="" id="dob" />
+            </div>
+            <div class="col-6">
+              <label>Address</label><br />
+              <input type="text" name="" placeholder="address" />
+            </div>
+          </div>
+          <div class="row" style="justify-content: center">
+            <button style="font-size: 25px;  border-radius: 10px;">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+<style>
+body{
+    background-color: chocolate;
+}
+.parent{
+    /* border: solid; */
+    justify-content: center;
+    padding: 10px;
+}
+  .container {
+    margin-left:15%;
+    margin-right: 15%;
+    width: 70%;
+    /* border: solid; */
+    padding: 2px;
+    margin-top: 100px;
+    border-radius: 20px;
+    height: 500px;
+    background-color: rgb(130, 227, 227);
+  }
+  .row {
+    display: flex;
+    font-size: 20px;
+    /* margin-left: 17.5%; */
+    /* margin-right: 17.5%; */
+    justify-content: space-between;
+    padding: 5px;
+  }
+  form {
+    /* border: solid; */
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 4px;
+  }
+  input {
+    font-size: larger;
+  }
+</style>
