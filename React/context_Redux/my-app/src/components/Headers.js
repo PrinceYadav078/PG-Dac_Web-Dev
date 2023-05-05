@@ -44,6 +44,16 @@ const Header = () => {
                 CompA
               </Link>
             </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/woredux">
+                With Out Redux
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/redux">
+                Redux
+              </Link>
+            </li>
 
             <li class="nav-item">
               <a class="nav-link disabled">Disabled</a>

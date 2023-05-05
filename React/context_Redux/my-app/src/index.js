@@ -15,6 +15,8 @@ import Home from "./components/Home";
 import Pagenotfound from "./components/Pagenotfound";
 import CompA from "./components/CompA";
 import ErrorBoundary from "./components/ErrorBoundary";
+import W_O_Redux from "./components/W_O_Redux";
+import Redux from "./components/Redux";
 // console.log("Hello World");
 // console.log(React);
 // console.log(ReactDOM);
@@ -51,6 +53,14 @@ const router = createBrowserRouter([
       {
         path: "/compA",
         element: <CompA />,
+      },
+      {
+        path: "/woredux",
+        element: <W_O_Redux/>,
+      },
+      {
+        path: "/redux",
+        element: <Redux/>,
       },
     ],
   },
