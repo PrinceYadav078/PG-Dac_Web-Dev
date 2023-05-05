@@ -35,8 +35,8 @@ const Header = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <Link class="nav-link" to="/show">
-                Show Data
+              <Link class="nav-link" to="/err">
+                Error Boundary
               </Link>
             </li>
             <li class="nav-item">

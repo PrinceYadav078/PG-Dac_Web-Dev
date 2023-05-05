@@ -11,9 +11,10 @@ import Profile from "./components/Profile";
 import Register from "./components/Register";
 import Home from "./components/Home";
 
-import Show from "./components/Show";
+
 import Pagenotfound from "./components/Pagenotfound";
 import CompA from "./components/CompA";
+import ErrorBoundary from "./components/ErrorBoundary";
 // console.log("Hello World");
 // console.log(React);
 // console.log(ReactDOM);
@@ -40,8 +41,8 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "show",
-        element: <Show />,
+        path: "err",
+        element: <ErrorBoundary />,
       },
       {
         path: "*",
