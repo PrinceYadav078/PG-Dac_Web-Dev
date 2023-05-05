@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+// import App from "./App";
 import App1 from "./App1";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -10,6 +10,7 @@ import Home from "./components/Home";
 import Profile from "./components/Profile";
 import Register from "./components/Register";
 import Pagenotfound from "./components/Pagenotfound";
+import Showdata from "./components/Showdata";
 
 // console.log("Hello World");
 // console.log(React);
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "show",
+        element: <Showdata />,
       },
       {
         path: "*",
