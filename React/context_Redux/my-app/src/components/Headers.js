@@ -4,7 +4,7 @@ const Header = () => {
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          Home
+          ErrorBoundary
         </Link>
         <button
           class="navbar-toggler"
@@ -34,11 +34,7 @@ const Header = () => {
                 Register
               </Link>
             </li>
-            <li class="nav-item">
-              <Link class="nav-link" to="/err">
-                Error Boundary
-              </Link>
-            </li>
+            
             <li class="nav-item">
               <Link class="nav-link" to="/compA">
                 CompA
@@ -46,7 +42,7 @@ const Header = () => {
             </li>
             <li class="nav-item">
               <Link class="nav-link" to="/woredux">
-                With Out Redux
+                WithOutRedux
               </Link>
             </li>
             <li class="nav-item">

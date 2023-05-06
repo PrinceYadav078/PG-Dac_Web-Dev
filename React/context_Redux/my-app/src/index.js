@@ -5,18 +5,18 @@ import App from "./App";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-
 import Login from "./components/Login";
 import Profile from "./components/Profile";
 import Register from "./components/Register";
 import Home from "./components/Home";
 
-
 import Pagenotfound from "./components/Pagenotfound";
 import CompA from "./components/CompA";
-import ErrorBoundary from "./components/ErrorBoundary";
+
 import W_O_Redux from "./components/W_O_Redux";
 import Redux from "./components/Redux";
+import { Provider } from "react-redux";
+import store from "./Store";
 // console.log("Hello World");
 // console.log(React);
 // console.log(ReactDOM);
@@ -42,10 +42,7 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
-      {
-        path: "err",
-        element: <ErrorBoundary />,
-      },
+
       {
         path: "*",
         element: <Pagenotfound />,
@@ -56,11 +53,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/woredux",
-        element: <W_O_Redux/>,
+        element: <W_O_Redux />,
       },
       {
         path: "/redux",
-        element: <Redux/>,
+        element: <Redux />,
       },
     ],
   },
@@ -69,7 +66,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 // console.log(root);
 root.render(
-
-<RouterProvider router={router} />
-    
+  <Provider store={store}>
+    <RouterProvider router={router} />
+  </Provider>
 );
